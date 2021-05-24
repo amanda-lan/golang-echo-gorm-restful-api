@@ -1,17 +1,24 @@
 package main
 
 import (
-	"fmt"
-
-	"example.com/user/hello/db"
+	"example.com/user/hello/database"
+	"example.com/user/hello/model"
 	"example.com/user/hello/route"
+	"gorm.io/gorm"
 )
 
+var db *gorm.DB
+
+func init() {
+	db = database.DB
+}
+
 func main() {
-	db.Init()
+
+	db.AutoMigrate(&model.Article{})
 
 	e := route.Init()
-	fmt.Printf("000111")
+
 	e.Logger.Fatal(e.Start(":1323"))
 
 }
