@@ -37,9 +37,9 @@ func init() {
 	}
 
 	DB = db
-	// db.Logger.LogMode(logger.Info)
+	db.Logger.LogMode(logger.Info)
 
-	/* 	sqldb, _ := db.DB()
-	   	sqldb.SetMaxIdleConns(10)
-	   	sqldb.SetMaxOpenConns(140) */
+	sqldb, _ := db.DB()
+	sqldb.SetMaxIdleConns(10)
+	sqldb.SetMaxOpenConns(140)
 }
