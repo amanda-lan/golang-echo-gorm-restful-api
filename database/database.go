@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"example.com/user/hello/config"
+	"example.com/hello/config"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"

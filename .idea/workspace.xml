@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b0c6b5e-8af4-4870-b042-89f37b0c817f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/article.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/article.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/article_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/article_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/article.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/article.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/route/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/route/router.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +42,8 @@
       <workItem from="1620970458307" duration="501000" />
       <workItem from="1621211896077" duration="9451000" />
       <workItem from="1621554519271" duration="13000" />
+      <workItem from="1623370564366" duration="6027000" />
+      <workItem from="1623805067424" duration="515000" />
     </task>
     <servers />
   </component>

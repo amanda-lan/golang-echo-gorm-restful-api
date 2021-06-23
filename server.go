@@ -1,9 +1,9 @@
 package main
 
 import (
-	"example.com/user/hello/database"
-	"example.com/user/hello/model"
-	"example.com/user/hello/route"
+	"example.com/hello/database"
+	"example.com/hello/model"
+	"example.com/hello/controller"
 	"gorm.io/gorm"
 )
 

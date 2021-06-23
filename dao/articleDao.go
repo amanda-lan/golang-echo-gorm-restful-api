@@ -1,30 +1,30 @@
-package api
+package dao
 
 import (
-	"net/http"
+/* 	"net/http"
 	"strconv"
-
-	"example.com/user/hello/database"
-	"example.com/user/hello/model"
-	"github.com/labstack/echo/v4"
+	"encoding/json"
+	"github.com/labstack/echo/v4" */
+	"example.com/hello/database"
+	"example.com/hello/model"
 )
 
-func GetAllArticles(c echo.Context) error {
-	var articles []model.Article
+func (articles *[]model.Article) GetAllArticlesDao() error {
 	database.DB.Find(&articles)
-	return c.JSON(http.StatusOK, &articles)
+	return &articles
 }
 
-func CreateArticle(c echo.Context) error {
+/* func CreateArticleDao(c echo.Context) error {
+    body, _ := json.Marshal(c.FormValue("body"))
 	article := model.Article{
 		Title: c.FormValue("title"),
-		Body:  c.FormValue("body"),
+		Body:  body,
 	}
 	database.DB.Create(&article)
 	return c.JSON(http.StatusOK, &article)
 }
 
-func ShowArticle(c echo.Context) error {
+func ShowArticleDao(c echo.Context) error {
 	var article model.Article
 	id, _ := strconv.Atoi(c.Param("id"))
 	database.DB.First(&article, id)
@@ -32,7 +32,7 @@ func ShowArticle(c echo.Context) error {
 	return c.JSON(http.StatusOK, &article)
 }
 
-func UpdateArticle(c echo.Context) error {
+func UpdateArticleDao(c echo.Context) error {
 	var article model.Article
 	id, _ := strconv.Atoi(c.Param("id"))
 	database.DB.First(&article, id)
@@ -41,9 +41,9 @@ func UpdateArticle(c echo.Context) error {
 	return c.JSON(http.StatusOK, &article)
 }
 
-func DeleteArticle(c echo.Context) error {
+func DeleteArticleDao(c echo.Context) error {
 	var article model.Article
 	id, _ := strconv.Atoi(c.Param("id"))
 	database.DB.Delete(&article, id)
 	return c.JSON(http.StatusOK, &article)
-}
+} */
